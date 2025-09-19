@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, CreditCard, Home, TrendingUp, Shield, PiggyBank, Briefcase } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   const services = [
@@ -74,10 +75,12 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="ghost" className="text-[hsl(var(--commerce-green))] hover:text-[hsl(var(--commerce-teal))] p-0 h-auto font-semibold group">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <Link to={`/services/${service.title.toLowerCase().replace(/\s+/g, '-').replace('&', '')}`}>
+                  <Button variant="ghost" className="text-[hsl(var(--commerce-green))] hover:text-[hsl(var(--commerce-teal))] p-0 h-auto font-semibold group">
+                    Learn More
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}
