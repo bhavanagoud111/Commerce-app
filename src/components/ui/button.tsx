@@ -15,6 +15,8 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        commerce: "bg-gradient-to-r from-[hsl(var(--commerce-green))] to-[hsl(var(--commerce-teal))] text-white hover:shadow-lg transition-all duration-300 font-semibold",
+        "commerce-outline": "border-2 border-[hsl(var(--commerce-green))] text-[hsl(var(--commerce-green))] bg-transparent hover:bg-[hsl(var(--commerce-green))] hover:text-white transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
