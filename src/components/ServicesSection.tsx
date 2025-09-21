@@ -9,37 +9,43 @@ const ServicesSection = () => {
       icon: <CreditCard className="h-8 w-8" />,
       title: "Banking & Cards",
       description: "Checking accounts, savings, credit cards, and debit cards designed for your needs.",
-      features: ["Interest checking", "High-yield savings", "Rewards credit cards"]
+      features: ["Interest checking", "High-yield savings", "Rewards credit cards"],
+      route: "/services/banking-cards"
     },
     {
       icon: <Home className="h-8 w-8" />,
       title: "Mortgages & Loans", 
       description: "Home loans, personal loans, and auto financing with competitive rates.",
-      features: ["Home mortgages", "Personal loans", "Auto financing"]
+      features: ["Home mortgages", "Personal loans", "Auto financing"],
+      route: "/services/mortgages-loans"
     },
     {
       icon: <TrendingUp className="h-8 w-8" />,
       title: "Investment Services",
       description: "Grow your wealth with our investment and retirement planning solutions.",
-      features: ["Investment management", "Retirement planning", "Brokerage services"]
+      features: ["Investment management", "Retirement planning", "Brokerage services"],
+      route: "/services/investment-services"
     },
     {
       icon: <Briefcase className="h-8 w-8" />,
       title: "Business Banking",
       description: "Complete banking solutions for businesses of all sizes.",
-      features: ["Business checking", "Commercial loans", "Treasury services"]
+      features: ["Business checking", "Commercial loans", "Treasury services"],
+      route: "/services/business-banking"
     },
     {
       icon: <PiggyBank className="h-8 w-8" />,
       title: "Wealth Management",
       description: "Personalized wealth management and trust services.",
-      features: ["Trust services", "Estate planning", "Private banking"]
+      features: ["Trust services", "Estate planning", "Private banking"],
+      route: "/services/wealth-management"
     },
     {
       icon: <Shield className="h-8 w-8" />,
       title: "Digital Security",
       description: "Advanced security features to protect your financial information.",
-      features: ["Fraud protection", "Secure banking", "Identity monitoring"]
+      features: ["Fraud protection", "Secure banking", "Identity monitoring"],
+      route: "/services/digital-security"
     }
   ];
 
@@ -75,7 +81,7 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to={`/services/${service.title.toLowerCase().replace(/\s+/g, '-').replace('&', '')}`}>
+                <Link to={service.route}>
                   <Button variant="ghost" className="text-[hsl(var(--commerce-green))] hover:text-[hsl(var(--commerce-teal))] p-0 h-auto font-semibold group">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

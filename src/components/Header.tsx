@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, MapPin, User } from "lucide-react";
+import { Search, MapPin } from "lucide-react";
 
 const Header = () => {
   return (
@@ -26,10 +26,6 @@ const Header = () => {
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
               <MapPin className="h-4 w-4 mr-1" />
               Find a Branch or ATM
-            </Button>
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-              <User className="h-4 w-4 mr-1" />
-              Log In
             </Button>
           </div>
         </div>

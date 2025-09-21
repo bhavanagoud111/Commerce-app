@@ -5,6 +5,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Dashboard from "./pages/Dashboard";
+import Accounts from "./pages/Accounts";
+import Payments from "./pages/Payments";
+import Profile from "./pages/Profile";
+import Support from "./pages/Support";
 import BankingCards from "./pages/services/BankingCards";
 import MortgagesLoans from "./pages/services/MortgagesLoans";
 import InvestmentServices from "./pages/services/InvestmentServices";
@@ -22,6 +27,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/accounts" element={<Accounts />} />
+          <Route path="/payments" element={<Payments />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/support" element={<Support />} />
           <Route path="/services/banking-cards" element={<BankingCards />} />
           <Route path="/services/mortgages-loans" element={<MortgagesLoans />} />
           <Route path="/services/investment-services" element={<InvestmentServices />} />
