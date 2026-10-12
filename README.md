@@ -7,11 +7,11 @@ A frontend prototype of a digital banking website, built with React, TypeScript 
 | Route | Description |
 |-------|-------------|
 | `/` | Landing page: hero section with a login card, a help-topic dropdown, a new-customer registration dialog, and a services overview |
-| `/dashboard` | Customer dashboard: quick actions, quick transfer, recent transactions and activity |
+| `/dashboard` | Customer dashboard: quick actions, quick and external transfers, scheduled transfers, bill payments and auto-pay, beneficiaries, recent transactions, and profile, notification and security settings |
 | `/accounts` | Account management, transaction history and account statements |
-| `/payments` | Payments and transfers: external and scheduled transfers, bill payments and auto-pay, beneficiaries |
-| `/profile` | Profile information, profile photo, contact details, account and notification settings |
-| `/support` | Customer support and support tickets |
+| `/payments` | Payments and transfers: recent and scheduled transfers, bill management, beneficiaries |
+| `/profile` | Profile and settings: profile photo, notification channels, recent activity |
+| `/support` | Customer support: contact information, support tickets and creating a new ticket |
 | `/services/*` | Service pages: banking cards, mortgages and loans, investment services, business banking, wealth management, digital security |
 
 The login button goes straight to `/dashboard`. The registration form only logs its data to the browser console, because there is no authentication or persistence.
